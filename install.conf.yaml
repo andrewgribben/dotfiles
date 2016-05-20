@@ -1,0 +1,23 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.dotfiles: ''
+    ~/.tmux.conf: tmux.conf
+    ~/.vim: vim
+    ~/.vimrc: vimrc
+    ~/.janus: janus      
+    ~/.tmuxinator: tmuxinator
+    ~/.vimrc.after: vimrc.after
+    ~/.zshrc.pre-oh-my-zsh: zshrc.pre-oh-my-zsh          
+    ~/.oh-my-zsh: oh-my-zsh  
+    ~/.vimrc.before: vimrc.before  
+    ~/.zshrc-update: zshrc-update                      
+    ~/.zshrc: zshrc
+    ~/.config: config
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

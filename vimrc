@@ -1,0 +1,1 @@
+/home/grib/.vim/janus/vim/vimrc

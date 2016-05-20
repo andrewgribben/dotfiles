@@ -1,0 +1,2 @@
+let mapleader = " "
+imap jk <Esc>
