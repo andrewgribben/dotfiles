@@ -8,7 +8,8 @@
     ~/.dotfiles: ''
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim
-    ~/.vimrc: vimrc
+    ~/.bin: bin
+    ~/.vimrc: vim/janus/vim/vimrc
     ~/.janus: janus      
     ~/.tmuxinator: tmuxinator
     ~/.vimrc.after: vimrc.after
