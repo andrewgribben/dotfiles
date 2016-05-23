@@ -84,7 +84,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.bin/tmuxinator.zsh
 SAVEHIST=1000
+if [ -d "$HOME/.local/bin" ]; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+export POWERLINE_COMMAND=powerline
 
 HISTFILE=~/.zsh_history
-. /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
+. ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 alias mux="tmuxinator"
