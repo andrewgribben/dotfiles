@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/grib/.oh-my-zsh
+  export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -82,12 +82,22 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+if [ -d "$HOME/Library/Python/2.7/bin" ]; then
+    PATH="$HOME/Library/Python/2.7/bin:$PATH"
+fi
+
+
+export POWERLINE_CONFIG_COMMAND=powerline-config
+export POWERLINE_COMMAND=powerline
+
 source ~/.bin/tmuxinator.zsh
 SAVEHIST=1000
 if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-export POWERLINE_COMMAND=powerline
+
+
+
 
 HISTFILE=~/.zsh_history
 . ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
