@@ -1,7 +1,7 @@
-# ~/.tmuxinator/reactor.yml
+# ~/.tmuxinator/gamebook.yml
 
-name: reactor
-root: ~/Development/reactor
+name: gamebook
+root: ~/Development/mantic_ds_rise_of_the_shadow_king/
 
 # Optional tmux socket
 # socket_name: foo
@@ -25,13 +25,11 @@ root: ~/Development/reactor
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t reactor
+# post: tmux -CC attach -t gamebook
 
 windows:
   - editor:
       layout: main-vertical
       panes:
         - vim
-        - guard
-  - server: bundle exec rails s
-  - logs: tail -f log/development.log
+        - http-server -p 8100 -i
