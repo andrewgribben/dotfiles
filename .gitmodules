@@ -1,0 +1,12 @@
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = git@github.com:andrewgribben/dotfiles_oh-my-zsh.git
+[submodule "vim"]
+	path = vim
+	url = git@github.com:andrewgribben/dotfiles_vim
+[submodule "janus/vim-tmux-navigator"]
+	path = janus/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
+[submodule "janus/ctrlp.vim"]
+	path = janus/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
